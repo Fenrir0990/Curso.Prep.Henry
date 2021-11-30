@@ -109,7 +109,7 @@ const nuevoObjeto = {
 }
 
 nuevoObjeto.decirHola(); //Hola a todo el mundo!
-```
+```puto
 
 ## Bucles `for…in`
 
