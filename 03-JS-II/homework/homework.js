@@ -117,7 +117,7 @@ function esEntero(numero) {
   // Tu código:
   if(numero === (Math.round(numero))){
     return true
-  }else
+  }
   return false
 }
 
@@ -184,7 +184,7 @@ function esVerdadero(valor){
   if(valor === true){
     return "Soy verdadero"
   }
-  else if(valor ===false){ 
+  else if(valor === false){ 
     return "Soy falso"}
 
 }
@@ -193,22 +193,31 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-  for(let i = 0 ; i < 61 ; i= i + 6){
-    return array[i]
-  }
-  
+  return [0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-if( return length = ~~(Math.log(numero) / Math.LN10 + 1);)
+  if(numero > -1000 && numero < -99){
+    return true
+  }
+  else if(numero > 99 && numero < 1000){
+    return true
+  }
+  return false
 }
+
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  do {
+    i= i + 5;
+    document.write(i);
+ } while (i = i + 5*8);
+
 }
 
 
