@@ -167,9 +167,8 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-    var sape = n.toString()
-    var duki = sape.split("")
-   if(duki[0] === "9"){
+    var sape = n.toString().split("")
+    if(sape[0] === "9"){
      return true
     }
   return false 
@@ -180,17 +179,14 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  for(var i = 0; i < arreglo.length ; i++){
-    for(var e = 0 ; e < arreglo.length ; e++ ){
-      if(arreglo[i] === arreglo[e]){
-        return true
-      }
+ 
+  for(var i = 0; i < arreglo.length ; i++ ){
+    if(arreglo[0]!==arreglo[i]){
+     return false 
     }
   }
-return false 
-
+  return true
 }
-
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
